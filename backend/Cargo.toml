@@ -1,0 +1,50 @@
+[package]
+name = "dofta"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+license.workspace = true
+
+[dependencies]
+# Web framework
+axum.workspace = true
+tokio.workspace = true
+tower.workspace = true
+tower-http.workspace = true
+axum-extra = { version = "0.9", features = ["typed-header"] }
+
+# Database
+sqlx.workspace = true
+
+# Serialization
+serde.workspace = true
+serde_json.workspace = true
+
+# Authentication
+argon2.workspace = true
+jsonwebtoken.workspace = true
+
+# Utilities
+uuid.workspace = true
+chrono.workspace = true
+rust_decimal.workspace = true
+
+# Error handling
+thiserror.workspace = true
+anyhow.workspace = true
+
+# Logging
+tracing.workspace = true
+tracing-subscriber.workspace = true
+
+# Encryption
+ring.workspace = true
+
+# Email
+lettre.workspace = true
+
+# Environment
+dotenvy.workspace = true
+
+[dev-dependencies]
+proptest.workspace = true
